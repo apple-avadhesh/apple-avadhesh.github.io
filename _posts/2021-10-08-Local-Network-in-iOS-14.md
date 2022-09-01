@@ -134,7 +134,7 @@ case wifiDenied
 case localNetworkDenied
 ```
 
-### Local Network Privacy Resources
+### References:
 
 [https://developer.apple.com/forums/thread/663858](https://developer.apple.com/forums/thread/663858)
 
