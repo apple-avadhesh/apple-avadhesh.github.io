@@ -7,8 +7,6 @@ tags: [charles]
 render_with_liquid: false
 ---
 
-# How to submit your app to the App Store ? [Updated: 18th Dec 2021]
-
 ## Prerequisites
 - Xcode compatible project(Using React-Native Project in this tutorial and Xcode 13.1).
 - [App Developer Account](https://developer.apple.com/programs/), Enroll for one if you dont have it.
