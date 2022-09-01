@@ -1,7 +1,7 @@
 ---
-title: Debugging in Xcode : Basics (Part 1)
+title: Debugging in Xcode Basics (Part 1)
 author: avadhesh
-date: 2021-10-14 14:10:00 +0800
+date: 2021-10-08 14:10:00 +0800
 categories: [Swift]
 tags: [debugging]
 render_with_liquid: false
