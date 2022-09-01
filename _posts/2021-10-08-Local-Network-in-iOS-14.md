@@ -7,7 +7,8 @@ tags: [local network]
 render_with_liquid: false
 ---
 
-In iOS14 if your app wants to use Bonjour service, mDNS service, or access a local network then the “Local Network” permission is required.
+> In iOS14 if your app wants to use Bonjour service, mDNS service, or access a local network then the “Local Network” permission is required.
+{: .prompt-tip }
 
 The below image shows services that require authorization. ([WWDC Video](https://developer.apple.com/videos/play/wwdc2020/10110/)).
 
@@ -25,7 +26,7 @@ Apps that requested local network permission will be listed under __Settings > P
 - The triggered popup appears only at the app’s first launch.
 - To consistently reshow the Local Network permission in the app without uninstalling it first, by going to Settings App -> General -> Reset -> Reset Location & Privacy.
 
-Swift Source Code for Triggering the Local Network Privacy Alert
+### Swift Source Code for Triggering the Local Network Privacy Alert
 
 ```swift
 func triggerLocalNetworkPrivacyAlert() {
@@ -86,7 +87,8 @@ private func addressesOfDiscardServiceOnBroadcastCapableInterfaces() -> [Data] {
 
 You can use the [unsatisfied reason property](https://developer.apple.com/documentation/network/nwpath/3687008-unsatisfiedreason) starting with iOS 14.2.
 
-__Note:__ Source code below will cause a crash in lower versions.
+> Source code below will cause a crash in lower versions.
+{: .prompt-warning }
 
 ```swift
 func checkUnsatisfiedReason() {
@@ -132,7 +134,7 @@ case wifiDenied
 case localNetworkDenied
 ```
 
-Local Network Privacy Resources
+### Local Network Privacy Resources
 
 [https://developer.apple.com/forums/thread/663858](https://developer.apple.com/forums/thread/663858)
 
