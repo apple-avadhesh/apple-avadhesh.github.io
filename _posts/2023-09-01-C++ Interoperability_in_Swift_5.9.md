@@ -7,7 +7,7 @@ tags: [Swift 5.9]
 render_with_liquid: false
 ---
 
-### Introduction
+## Introduction
 
 - For some types of APIs, Swift 5.9 provides bidirectional compatibility with C++ and Objective-C++.
 - Swift 5.9 introduced direct interoperability between Swift and C++ types and functions.
@@ -51,3 +51,9 @@ func createEmployee() {
     print(emp.age)
 }
 ```
+
+## References
+- https://www.swift.org/blog/swift-5.9-released/
+- https://forums.swift.org/t/c-interoperability-in-swift-5-9/65369
+
+
