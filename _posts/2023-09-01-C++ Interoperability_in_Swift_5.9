@@ -1,0 +1,50 @@
+
+
+
+
+
+# What's new in C++ Interoperability in Swift 5.9
+
+## Introduction
+- For some types of APIs, Swift 5.9 provides bidirectional compatibility with C++ and Objective-C++.
+- Swift 5.9 introduced direct interoperability between Swift and C++ types and functions.
+
+## Implementation
+### Configuration 
+__Step 1:__ Build Settings —> Swift Complier - Language —> C++ and Objective-C Interoperability —> Select C++/Objective-C++.
+
+![Interoperability](//images.ctfassets.net/uhmar3aa2ux0/4zRVvSkhm2vhdyipAbR9QM/8583210074724a9197ed0dd85d52f301/Screenshot_2023-10-01_at_10.28.50_AM.png)
+
+![InteroperabilityDropDown](//images.ctfassets.net/uhmar3aa2ux0/18aYAmf5ODEryEPpxh37WY/31ca2099c5b1b7c6fa07d346430da26e/Screenshot_2023-10-01_at_10.29.11_AM.png)
+
+__Step 2:__ Import C++ file i.e [Employee.cpp] into the Bridging Header 
+
+```Swift
+#import "Employee.cpp"
+```
+
+### Calling C++ in Swift
+In this example, we define a structure called Employee with two parameters: name of type std::string and age of type int. The initializer is defined using a constructor that takes the name and age as parameters and initializes the corresponding member variables.
+
+```C++
+#include <iostream>
+#include <string>
+
+struct Employee {
+    std::string name;
+    int age;
+
+    // Initializer
+    Employee(const std::string& empName, int empAge) : name(empName), age(empAge) {}
+};
+```
+
+And in Swift file create an instance of Employee named emp using the initializer by passing the name "Jacob" and age 30 as arguments. We then access and print the employee's name and age using the emp.name and emp.age member variables, respectively.
+
+```Swift
+func createEmployee() {
+    let emp = Employee("John Doe", 30)
+    print(emp.name)
+    print(emp.age)
+}
+```
