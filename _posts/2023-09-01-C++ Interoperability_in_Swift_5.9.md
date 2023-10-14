@@ -27,7 +27,7 @@ __Step 2:__ Import C++ file i.e [Employee.cpp] into the Bridging Header
 ```
 
 ### Calling C++ in Swift
-In this example, I defined a structure called Employee with two parameters: name of type std::string and age of type int. The initializer is defined using a constructor that takes the name and age as parameters and initializes the corresponding member variables.
+In this example, you define a structure called Employee with two parameters: name of type std::string and age of type int. The initializer is defined using a constructor that takes the name and age as parameters and initializes the corresponding member variables.
 
 ```c++
 #include <iostream>
@@ -42,7 +42,7 @@ struct Employee {
 };
 ```
 
-And in Swift file created an instance of Employee named emp using the initializer by passing the name "Jacob" and age 30 as arguments. Then access and print the employee's name and age using the emp.name and emp.age member variables, respectively.
+And in Swift file create an instance of Employee named emp using the initializer by passing the name "Jacob" and age 30 as arguments. You then access and print the employee's name and age using the emp.name and emp.age member variables, respectively.
 
 ```swift
 func createEmployee() {
