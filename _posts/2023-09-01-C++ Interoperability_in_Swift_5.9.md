@@ -14,7 +14,7 @@ render_with_liquid: false
 
 ## Implementation
 ### Configuration 
-__Step 1: <kbd>Build Settings</kbd> > <kbd>Swift Complier - Language</kbd> > <kbd>C++ and Objective-C Interoperability</kbd> > <kbd>Select C++/Objective-C++</kbd>
+__Step 1:__ <kbd>Build Settings</kbd> > <kbd>Swift Complier - Language</kbd> > <kbd>C++ and Objective-C Interoperability</kbd> > <kbd>Select C++/Objective-C++</kbd>
 
 ![Interoperability](//images.ctfassets.net/uhmar3aa2ux0/4zRVvSkhm2vhdyipAbR9QM/8583210074724a9197ed0dd85d52f301/Screenshot_2023-10-01_at_10.28.50_AM.png)
 
