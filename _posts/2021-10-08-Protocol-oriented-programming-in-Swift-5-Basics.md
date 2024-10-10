@@ -185,7 +185,7 @@ Protocol composition lets the type adopt multiple protocols. It allows us to bre
 
 Consider this class hierarchy :
 
-![Protocol-Composition-DFD-768x341](//images.contentful.com/uhmar3aa2ux0/4g6rg2i6dZS24plPhMQ7Id/115f81d8832d1e0aa97b23ddb208fe08/Protocol-Composition-DFD-768x341.png)
+![Protocol-Composition-DFD-768x341](https://images.contentful.com/uhmar3aa2ux0/4g6rg2i6dZS24plPhMQ7Id/115f81d8832d1e0aa97b23ddb208fe08/Protocol-Composition-DFD-768x341.png)
 
 __Note:__ Flowchart created with [Creately](https://creately.com/)
 

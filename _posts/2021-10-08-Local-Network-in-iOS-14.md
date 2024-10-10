@@ -12,15 +12,15 @@ render_with_liquid: false
 
 The below image shows services that require authorization. ([WWDC Video](https://developer.apple.com/videos/play/wwdc2020/10110/)).
 
-![Screenshot-2020-11-22-at-10.31.52-PM-768x330](//images.contentful.com/uhmar3aa2ux0/6pKOy9RRAtPJHm1kRIWYAN/c6aeadbc1cedc0864d4c0068cceca816/Screenshot-2020-11-22-at-10.31.52-PM-768x330.png)
+![Screenshot-2020-11-22-at-10.31.52-PM-768x330](https://images.contentful.com/uhmar3aa2ux0/6pKOy9RRAtPJHm1kRIWYAN/c6aeadbc1cedc0864d4c0068cceca816/Screenshot-2020-11-22-at-10.31.52-PM-768x330.png)
 
 Those apps requiring the permission need to describe which services it uses and its purpose in the “Info.plist”.
 
-![Screenshot-2020-11-22-at-11.18.56-PM-768x366](//images.contentful.com/uhmar3aa2ux0/49IO5Qa5jQT02MHsiopYiB/d8576711c314025716aa8678946893c1/Screenshot-2020-11-22-at-11.18.56-PM-768x366.png)
+![Screenshot-2020-11-22-at-11.18.56-PM-768x366](https://images.contentful.com/uhmar3aa2ux0/49IO5Qa5jQT02MHsiopYiB/d8576711c314025716aa8678946893c1/Screenshot-2020-11-22-at-11.18.56-PM-768x366.png)
 
 Apps that requested local network permission will be listed under __Settings > Privacy > Local Network__.
 
-![image1-281x500](//images.contentful.com/uhmar3aa2ux0/13W1UMyK8gcv44lOAlpbcB/05bab73491d22802a3a23b5324cf60da/image1-281x500.png)
+![image1-281x500](https://images.contentful.com/uhmar3aa2ux0/13W1UMyK8gcv44lOAlpbcB/05bab73491d22802a3a23b5324cf60da/image1-281x500.png)
 
 - If you revoke the permission of any app, manual triggering for request won’t allow the popup to appear.
 - The triggered popup appears only at the app’s first launch.

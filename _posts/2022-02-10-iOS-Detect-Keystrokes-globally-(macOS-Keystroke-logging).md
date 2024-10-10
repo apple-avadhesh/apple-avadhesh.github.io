@@ -23,7 +23,7 @@ __Xcode__: 13.2.1
 
 ## Prompt for user's permission:  
 
-![AccessibilityAccessPrompt](//images.ctfassets.net/uhmar3aa2ux0/266xmQUFLBqlW5wGJrZwcX/16dbcb0be9cd0bc7fe2a7d934edfa1ce/Screenshot_2022-02-14_at_10.03.51_AM.png)
+![AccessibilityAccessPrompt](https://images.ctfassets.net/uhmar3aa2ux0/266xmQUFLBqlW5wGJrZwcX/16dbcb0be9cd0bc7fe2a7d934edfa1ce/Screenshot_2022-02-14_at_10.03.51_AM.png)
 
 ```swift
 @discardableResult
@@ -40,7 +40,7 @@ func acquirePrivileges() -> Bool {
 > The above code will present the alert for permission, navigate to Privacy tab under __System Preferences__ > __Security & Privacy__ and clicking on the App's checkbox should enable accessibility for the app.
 {: .prompt-info }
 
-![AccessibilityPermissionAllowed](//images.ctfassets.net/uhmar3aa2ux0/2UYUrqzDtgISSGvO5Sazh1/1460a083d064c35f3926e89ebbad6774/Screenshot_2022-02-14_at_10.07.33_AM.png)
+![AccessibilityPermissionAllowed](https://images.ctfassets.net/uhmar3aa2ux0/2UYUrqzDtgISSGvO5Sazh1/1460a083d064c35f3926e89ebbad6774/Screenshot_2022-02-14_at_10.07.33_AM.png)
 
 Using the below code will allow adding global monitoring for the __*.keyDown*__ event. The event will not be triggered if you try to enter a password on any website. [Now aware of any public API or workaround to tackle that for now 😉] 
 
