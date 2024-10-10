@@ -16,9 +16,9 @@ render_with_liquid: false
 ### Configuration 
 __Step 1:__ <kbd>Build Settings</kbd> > <kbd>Swift Complier - Language</kbd> > <kbd>C++ and Objective-C Interoperability</kbd> > <kbd>Select C++/Objective-C++</kbd>
 
-![Interoperability](https://images.ctfassets.net/uhmar3aa2ux0/4zRVvSkhm2vhdyipAbR9QM/8583210074724a9197ed0dd85d52f301/Screenshot_2023-10-01_at_10.28.50_AM.png)
+![Interoperability](//images.ctfassets.net/uhmar3aa2ux0/4zRVvSkhm2vhdyipAbR9QM/8583210074724a9197ed0dd85d52f301/Screenshot_2023-10-01_at_10.28.50_AM.png)
 
-![InteroperabilityDropDown](https://images.ctfassets.net/uhmar3aa2ux0/18aYAmf5ODEryEPpxh37WY/31ca2099c5b1b7c6fa07d346430da26e/Screenshot_2023-10-01_at_10.29.11_AM.png)
+![InteroperabilityDropDown](//images.ctfassets.net/uhmar3aa2ux0/18aYAmf5ODEryEPpxh37WY/31ca2099c5b1b7c6fa07d346430da26e/Screenshot_2023-10-01_at_10.29.11_AM.png)
 
 __Step 2:__ Import C++ file i.e [Employee.cpp] into the Bridging Header 
 
