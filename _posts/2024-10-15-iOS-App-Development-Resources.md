@@ -2,8 +2,8 @@
 title: iOS App Development Resources
 author: avadhesh
 date: 2024-10-15 14:10:00 +0800
-categories: [Swift]
-tags: [development]
+categories: [Development]
+tags: [tools]
 render_with_liquid: false
 ---
 
