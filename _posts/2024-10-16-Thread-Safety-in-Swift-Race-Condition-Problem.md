@@ -7,7 +7,7 @@ tags: [concurrency]
 render_with_liquid: false
 ---
 
-Concurrency in Swift is a powerful tool, allowing us to write efficient and responsive applications. However, it also brings with it the responsibility of ensuring thread safety. Let's delve into a common concurrency pitfall, using a practical example with <code>DispatchQueue</code> and <code>DispatchGroup</code>.
+Concurrency in Swift is a powerful tool, allowing us to write efficient and responsive applications. However, it also brings with it the responsibility of ensuring thread safety. Let's delve into a common concurrency pitfall, using a practical example with `DispatchQueue` and `DispatchGroup`.
 
 ### Scenario:
 The following code, designed to increment a shared resource using a DispatchGroup and concurrent threads:
@@ -50,7 +50,7 @@ The result? We've lost an increment! The final value of sharedResource might be 
 To prevent this race condition, we need to synchronize access to sharedResource. Here are some solutions, adapted to the example code:
 
 #### 1. DispatchQueue with sync
-Create a serial queue and perform the increment operation synchronously within it. By performing the increment operation synchronously on a serial <code>DispatchQueue<\code>, we ensure that only one thread can access the counter at a time.
+Create a serial queue and perform the increment operation synchronously within it. By performing the increment operation synchronously on a serial `DispatchQueue`, we ensure that only one thread can access the counter at a time.
 ```swift
 func testThreadSafety() {
   let group = DispatchGroup()
@@ -74,7 +74,7 @@ func testThreadSafety() {
 ```
 
 #### 2. DispatchSemaphore
-Use a semaphore to restrict access to sharedResource to one thread at a time. A semaphore acts as a gatekeeper, limiting the number of concurrent accesses to a shared resource.
+Use a semaphore to restrict access to `sharedResource` to one thread at a time. A semaphore acts as a gatekeeper, limiting the number of concurrent accesses to a shared resource.
 ```swift
 func testThreadSafety() {
   let group = DispatchGroup()
@@ -98,7 +98,7 @@ func testThreadSafety() {
 ```
 
 #### 3. Actors
-Encapsulate <code>sharedResource<\code> within an actor to ensure thread-safe access. Introduced in Swift 5.5, actors encapsulate data and provide a safe way to access and modify it from multiple threads.
+Encapsulate `sharedResource` within an actor to ensure thread-safe access. Introduced in Swift 5.5, actors encapsulate data and provide a safe way to access and modify it from multiple threads.
 ```swift
 func testThreadSafety() {
   let group = DispatchGroup()
@@ -129,3 +129,9 @@ func testThreadSafety() {
   }
 }
 ```
+
+Explanation:
+Task to the Rescue: By wrapping await counter.increment() inside a Task, you create a new asynchronous context within the DispatchQueue closure. This allows you to use await to call the actor's increment() method.
+
+> When using actors with DispatchGroup, make sure you call group.leave()  inside the Task to ensure that the group waits for the asynchronous actor method to complete.
+With this adjustment, your code should compile and run correctly, demonstrating the thread-safe incrementing of the sharedResource using an actor.
