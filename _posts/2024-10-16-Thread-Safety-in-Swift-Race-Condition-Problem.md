@@ -38,13 +38,13 @@ The `sharedResource += 1` operation, while seemingly simple, is not atomic. It i
 Read: The current value of sharedResource is read from memory.\
 Increment: The value is incremented.\
 Write: The updated value is written back to memory.\
-When multiple threads execute this non-atomic operation concurrently, they can interfere with each other. For example:\
+When multiple threads execute this non-atomic operation concurrently, they can interfere with each other. For example:
 
 Thread A reads sharedResource as 10.\
 Thread B reads sharedResource also as 10.\
 Thread A increments to 11 and writes back.\
 Thread B increments to 11 and writes back.\
-The result? We've lost an increment! The final value of sharedResource might be significantly less than 1000.\
+The result? We've lost an increment! The final value of sharedResource might be significantly less than 1000.
 
 ### Restoring Order with Synchronization
 To prevent this race condition, we need to synchronize access to sharedResource. Here are some solutions, adapted to the example code:
@@ -130,8 +130,8 @@ func testThreadSafety() {
 }
 ```
 
-Explanation:
-Task to the Rescue: By wrapping await counter.increment() inside a Task, you create a new asynchronous context within the DispatchQueue closure. This allows you to use await to call the actor's increment() method.
+**Explanation**:
+Task to the Rescue: By wrapping `await counter.increment()` inside a Task, you create a new asynchronous context within the `DispatchQueue` closure. This allows you to use await to call the actor's `increment()` method.
 
-> When using actors with DispatchGroup, make sure you call group.leave()  inside the Task to ensure that the group waits for the asynchronous actor method to complete.
+> When using actors with `DispatchGroup`, make sure you call `group.leave()`  inside the Task to ensure that the group waits for the asynchronous actor method to complete.
 With this adjustment, your code should compile and run correctly, demonstrating the thread-safe incrementing of the sharedResource using an actor.
