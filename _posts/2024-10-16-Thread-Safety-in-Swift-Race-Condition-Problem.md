@@ -34,17 +34,17 @@ func testThreadSafety() {
 The intent is clear: increment sharedResource 1000 times concurrently and then print the final result. However, this code harbors a subtle but significant issue: a race condition.
 
 ### Dissecting the Race Condition
-The sharedResource += 1 operation, while seemingly simple, is not atomic. It involves these steps:
-Read: The current value of sharedResource is read from memory.
-Increment: The value is incremented.
-Write: The updated value is written back to memory.
-When multiple threads execute this non-atomic operation concurrently, they can interfere with each other. For example:
+The `sharedResource += 1` operation, while seemingly simple, is not atomic. It involves these steps:
+Read: The current value of sharedResource is read from memory.\
+Increment: The value is incremented.\
+Write: The updated value is written back to memory.\
+When multiple threads execute this non-atomic operation concurrently, they can interfere with each other. For example:\
 
-Thread A reads sharedResource as 10.
-Thread B reads sharedResource also as 10.
-Thread A increments to 11 and writes back.
-Thread B increments to 11 and writes back.
-The result? We've lost an increment! The final value of sharedResource might be significantly less than 1000.
+Thread A reads sharedResource as 10.\
+Thread B reads sharedResource also as 10.\
+Thread A increments to 11 and writes back.\
+Thread B increments to 11 and writes back.\
+The result? We've lost an increment! The final value of sharedResource might be significantly less than 1000.\
 
 ### Restoring Order with Synchronization
 To prevent this race condition, we need to synchronize access to sharedResource. Here are some solutions, adapted to the example code:
