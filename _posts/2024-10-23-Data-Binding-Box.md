@@ -2,8 +2,8 @@
 title: Use closures to implement data binding
 author: avadhesh
 date: 2024-10-23 14:10:00 +0800
-categories: [Swift]
-tags: [data binding]
+categories: [Swift, MVVM]
+tags: [binding]
 render_with_liquid: false
 ---
 
