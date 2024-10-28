@@ -8,8 +8,8 @@ render_with_liquid: falsë
 ---
 
 ## Human Interface Guidelines
-**Links:** 
-[Apple's Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines)
+**Links:**  
+1. [Apple's Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines)
 
 ## Web-based continuous localization
 **Links:** 
