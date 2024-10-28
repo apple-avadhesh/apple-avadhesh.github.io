@@ -8,7 +8,8 @@ render_with_liquid: falsë
 ---
 
 ## Human Interface Guidelines
-[Link](https://developer.apple.com/design/human-interface-guidelines)
+**Links:** 
+[Apple's Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines)
 
 ## Web-based continuous localization
 **Links:** 
@@ -17,4 +18,6 @@ render_with_liquid: falsë
 3. [crowdin](https://crowdin.com/mobile-app-localization)
 4. [transifex](https://www.transifex.com/)
 
-̦
+## Maps
+**Links:** 
+1. [Converting Google Maps Directions to GPX data](https://mapstogpx.com/)
