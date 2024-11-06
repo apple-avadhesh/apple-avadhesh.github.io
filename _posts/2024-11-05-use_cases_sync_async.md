@@ -43,6 +43,13 @@ serialQueue.sync {
     print("🔴 Task 2 finished on serialQueue")
 }
 ```
+#### Output:
+```bash
+🔴 Task 1 started on serialQueue
+🔴 Task 1 finished on serialQueue
+🔴 Task 2 started on serialQueue
+🔴 Task 2 finished on serialQueue
+```
 
 ## Serial Queue + Async
 
@@ -59,6 +66,11 @@ serialQueue.async {
     // Task 3: I/O-bound task (e.g., network request)
     print("🔵 Task 3 finished on serialQueue")
 }
+```
+#### Output:
+```bash
+🔵 Task 3 started on serialQueue
+🔵 Task 3 finished on serialQueue
 ```
 
 ## Concurrent Queue + Sync (Not Recommended)
@@ -83,6 +95,13 @@ concurrentQueue.sync {
     print("🟢 Task 5 finished on concurrentQueue")
 }
 ```
+#### Output:
+```bash
+🟢 Task 4 started on concurrentQueue
+🟢 Task 4 finished on concurrentQueue
+🟢 Task 5 started on concurrentQueue
+🟢 Task 5 finished on concurrentQueue
+```
 
 ## Concurrent Queue + Async
 
@@ -105,4 +124,25 @@ concurrentQueue.async {
     // Task 7: Another image processing task
     print("🟡 Task 7 finished on concurrentQueue")
 }
+```
+#### Output: The order of execution for tasks on a concurrent queue is not guaranteed. The operating system's scheduler will determine the actual order based on various factors like thread availability, system load, and task priority.
+```bash
+Here's a possible output:
+
+🟡 Task 6 started on concurrentQueue
+🟡 Task 7 started on concurrentQueue
+🟡 Task 7 finished on concurrentQueue
+🟡 Task 6 finished on concurrentQueue
+Or it could be:
+
+🟡 Task 7 started on concurrentQueue
+🟡 Task 6 started on concurrentQueue
+🟡 Task 7 finished on concurrentQueue
+🟡 Task 6 finished on concurrentQueue
+Or even something more interleaved:
+
+🟡 Task 6 started on concurrentQueue
+🟡 Task 7 started on concurrentQueue
+🟡 Task 6 finished on concurrentQueue
+🟡 Task 7 finished on concurrentQueue
 ```
