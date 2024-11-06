@@ -7,12 +7,12 @@ tags: [concurrency]
 render_with_liquid: false
 ---
 
-Queue Type	Method	Description	When to Use	Example Scenario			
-Serial Queue	sync	Executes the block synchronously, blocking the current thread until the block finishes.	When you need to ensure a specific order of execution and don't mind blocking the current thread.	Updating a shared resource like a database or file system.			
-Serial Queue	async	Executes the block asynchronously, returning immediately without blocking the current thread.	When you need to perform I/O-bound tasks without blocking the main thread.	Fetching data from a network or reading/writing a file.			
-Concurrent Queue	sync	Executes the block synchronously, blocking the current thread until all tasks on the queue finish.	When you need to ensure a specific order of execution for concurrent tasks and don't mind blocking the current thread.	Not recommended for most use cases as it can lead to deadlocks.			
-Concurrent Queue	async	Executes the block asynchronously, allowing multiple tasks to run concurrently.	When you need to maximize performance by executing multiple tasks concurrently without blocking the current thread.	Processing multiple images or performing multiple network requests.			
-
+| Queue Type | Method | Description | When to Use | Example Scenario |
+|---|---|---|---|---|
+| Serial Queue | sync | Executes the block synchronously, blocking the current thread until the block finishes. | When you need to ensure a specific order of execution and don't mind blocking the current thread. | Updating a shared resource like a database or file system. |
+| Serial Queue | async | Executes the block asynchronously, returning immediately without blocking the current thread. | When you need to perform I/O-bound tasks without blocking the main thread. | Fetching data from a network or reading/writing a file. |
+| Concurrent Queue | sync | Executes the block synchronously, blocking the current thread until all tasks on the queue finish. | When you need to ensure a specific order of execution for concurrent tasks and don't mind blocking the current thread. | Not recommended for most use cases as it can lead to deadlocks. |
+| Concurrent Queue | async | Executes the block asynchronously, allowing multiple tasks to run concurrently. | When you need to maximize performance by executing multiple tasks concurrently without blocking the current thread. | Processing multiple images or performing multiple network requests. |
 
 ### I've chosen the colors based on the following logic:
 1. Red (🔴): For tasks that are potentially blocking or have a sequential nature.
