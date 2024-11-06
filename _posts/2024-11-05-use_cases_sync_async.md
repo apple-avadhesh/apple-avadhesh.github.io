@@ -44,7 +44,7 @@ serialQueue.sync {
 }
 ```
 #### Output:
-```bash
+```console
 🔴 Task 1 started on serialQueue
 🔴 Task 1 finished on serialQueue
 🔴 Task 2 started on serialQueue
@@ -68,7 +68,7 @@ serialQueue.async {
 }
 ```
 #### Output:
-```bash
+```console
 🔵 Task 3 started on serialQueue
 🔵 Task 3 finished on serialQueue
 ```
@@ -96,7 +96,7 @@ concurrentQueue.sync {
 }
 ```
 #### Output:
-```bash
+```console
 🟢 Task 4 started on concurrentQueue
 🟢 Task 4 finished on concurrentQueue
 🟢 Task 5 started on concurrentQueue
@@ -125,8 +125,12 @@ concurrentQueue.async {
     print("🟡 Task 7 finished on concurrentQueue")
 }
 ```
-#### Output: The order of execution for tasks on a concurrent queue is not guaranteed. The operating system's scheduler will determine the actual order based on various factors like thread availability, system load, and task priority.
-```bash
+#### Output: 
+
+> The order of execution for tasks on a concurrent queue is not guaranteed. The operating system's scheduler will determine the actual order based on various factors like thread availability, system load, and task priority.
+{: .prompt-tip }
+
+```console
 
 Here's a possible output:
 🟡 Task 6 started on concurrentQueue
