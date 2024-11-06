@@ -127,20 +127,20 @@ concurrentQueue.async {
 ```
 #### Output: The order of execution for tasks on a concurrent queue is not guaranteed. The operating system's scheduler will determine the actual order based on various factors like thread availability, system load, and task priority.
 ```bash
+
 Here's a possible output:
-
 🟡 Task 6 started on concurrentQueue
 🟡 Task 7 started on concurrentQueue
 🟡 Task 7 finished on concurrentQueue
 🟡 Task 6 finished on concurrentQueue
+
 Or it could be:
-
 🟡 Task 7 started on concurrentQueue
 🟡 Task 6 started on concurrentQueue
 🟡 Task 7 finished on concurrentQueue
 🟡 Task 6 finished on concurrentQueue
-Or even something more interleaved:
 
+Or even something more interleaved:
 🟡 Task 6 started on concurrentQueue
 🟡 Task 7 started on concurrentQueue
 🟡 Task 6 finished on concurrentQueue
