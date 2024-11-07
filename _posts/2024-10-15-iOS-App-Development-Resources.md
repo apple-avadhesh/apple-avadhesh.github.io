@@ -18,6 +18,11 @@ render_with_liquid: falsë
 3. [crowdin](https://crowdin.com/mobile-app-localization)
 4. [transifex](https://www.transifex.com/)
 
+## Mobile System Design
+**Links:** 
+1. [A Simple Framework For Mobile System Design Interviews](https://github.com/weeeBox/mobile-system-design)
+2. [Interview Preparation Resources - Tjeerd in 't Veen](https://www.mobilesystemdesign.com/interview-resources/)
+
 ## Maps
 **Links:** 
 1. [Converting Google Maps Directions to GPX data](https://mapstogpx.com/)
