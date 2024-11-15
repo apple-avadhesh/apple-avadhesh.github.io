@@ -121,8 +121,8 @@ comments:
   giscus:
     repo: apple-avadhesh/apple-avadhesh.github.io
     repo_id: R_kgDOM-bFAw
-    category: Comments
-    category_id: DIC_kwDOLAfXJc4CcPug
+    category: General
+    category_id: DIC_kwDOM-bFA84CkSvp
     mapping: title
     strict: # optional, default to '0'
     input_position: # optional, default to 'bottom'
