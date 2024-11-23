@@ -19,3 +19,11 @@
   top: -2.75rem;
   position: relative;
   transform: rotate(-90deg);
+
+  circle {
+    stroke: var(--toc-highlight);
+    stroke-dasharray: 2 * 3.14 * 20;
+    stroke-dashoffset: 2 * 3.14 * 20;
+    transition: stroke-dashoffset 0.2s;
+  }
+}
