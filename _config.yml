@@ -16,7 +16,7 @@ timezone:
 
 title: Code Swiftly # the main title
 
-tagline: Hi I'm Avadhesh Sharma I design & build iPhone Applications. This is my personal blog where I write about Swift development. At present, learning Web Tools and Flutter. # it will display as the sub-title
+tagline: "iOS developer writing about Swift, web tools, and Flutter." # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
