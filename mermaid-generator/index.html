@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mermaid Diagram Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Mermaid Diagram Generator</h1>
+    <div class="controls">
+      <label>Example
+        <select id="example"></select>
+      </label>
+      <label>Theme
+        <select id="theme">
+          <option value="default">default</option>
+          <option value="dark">dark</option>
+          <option value="forest">forest</option>
+          <option value="neutral">neutral</option>
+        </select>
+      </label>
+      <label>Background
+        <select id="background">
+          <option value="white">white</option>
+          <option value="transparent">transparent</option>
+        </select>
+      </label>
+      <label>PNG scale
+        <select id="scale">
+          <option value="1">1x</option>
+          <option value="2" selected>2x</option>
+          <option value="3">3x</option>
+          <option value="4">4x</option>
+        </select>
+      </label>
+      <button id="export-svg" disabled>Export SVG</button>
+      <button id="export-png" disabled>Export PNG</button>
+      <button id="copy-svg" disabled>Copy SVG</button>
+    </div>
+  </header>
+  <main>
+    <section class="pane editor-pane">
+      <div class="pane-title">Mermaid code</div>
+      <textarea id="code" spellcheck="false"></textarea>
+      <div id="error" class="error" hidden></div>
+    </section>
+    <section class="pane preview-pane">
+      <div class="pane-title">
+        Preview
+        <span class="zoom">
+          <button id="zoom-out" title="Zoom out">-</button>
+          <span id="zoom-level">100%</span>
+          <button id="zoom-in" title="Zoom in">+</button>
+          <button id="zoom-reset" title="Reset zoom">Reset</button>
+        </span>
+      </div>
+      <div id="preview-wrap"><div id="preview"></div></div>
+    </section>
+  </main>
+  <div id="toast" hidden></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
