@@ -36,6 +36,7 @@ social:
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Avadhesh Sharma
   email: apple.avadhesh@gmail.com # change to your email address
+  fediverse_handle: # fill in your fediverse handle, e.g. @username@domain.com
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/code_swiftly # change to your Twitter homepage
@@ -106,6 +107,13 @@ social_preview_image: # string, local or CORS resources
 
 # boolean type, the global switch for TOC in posts.
 toc: true
+
+actions:
+  # Display an edit link on each post page.
+  edit_post:
+    enabled: false
+    url: ""
+    static_url: false
 
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
